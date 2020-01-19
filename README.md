@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/{owner}/{repo}/workflows/{workflow_name}/badge.svg)](https://github.com/{owner}/{repo}/actions)
+[![Actions Status](https://github.com/abtreece/ansible-role-hello/workflows/molecule_test/badge.svg)](https://github.com/abtreece/ansible-role-hello/actions)
 
 ansible-role-hello
 =========

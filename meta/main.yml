@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: Britt Treece
+  description: Hello World role to test GitHub Actions
+  company: Brackery
+  license: MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+
+  galaxy_tags:
+    - hello
+
+dependencies: []

@@ -3,16 +3,19 @@ dependency:
   name: galaxy
 driver:
   name: docker
-lint:
-  name: yamllint
+lint: |
+  set -e
+  yamllint .
+  ansible-lint
+  flake8
 platforms:
-  - name: instance
-    image: ubuntu:18.04
+  - name: centos
+    image: docker.io/pycontribs/centos:8
+    pre_build_image: true
+  - name: ubuntu
+    image: docker.io/pycontribs/ubuntu
+    pre_build_image: true
 provisioner:
   name: ansible
-  lint:
-    name: ansible-lint
 verifier:
-  name: testinfra
-  lint:
-    name: flake8
+  name: ansible
